@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{bf9866c9-5bd3-40dc-ad03-2d5061f952ec}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\TTS">
+      <UniqueIdentifier>{fc93e829-98e8-4797-916b-7e67e21d0db3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{48575207-16f8-451c-88bb-f901d4490051}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{a5ce33aa-4f6f-400c-b6f3-d4f6ffc3fc52}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Letter2Phone\DecisionTree.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\Dictionary.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Letter2Phone\Feature.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Letter2Phone\Letter2Phone.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Letter2Phone\letter2phonelr.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Letter2Phone\letter2phonerl.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhoFile\LPhonemePlus.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhoFile\LPitchPoint.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhoFile\Phoneme.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhoFile\PhonemePlus.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhoFile\PitchPoint.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\Speak.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\SpeakAmerican.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\SpeakArabic.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\SpeakFrench.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\VpError.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ZPhoneme.cpp">
+      <Filter>Source Files\TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="loading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mbrdico.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="txt2speech.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="mbrdico.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\DecisionTree.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Dictionary.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Feature.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Letter2Phone.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="loading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\LPhonemePlus.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\LPitchPoint.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\LToken.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mbrdico.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mbrolatools\mbrplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VISUALC++\mbrolatools\mbrplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Phoneme.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\PhonemePlus.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\PitchPoint.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Speak.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\SpeakAmerican.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\SpeakArabic.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\SpeakFrench.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="txt2speech.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\VpError.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\ZPhoneme.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\mbrdico.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\mbrolatools\mbrplay.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\mbrdico.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

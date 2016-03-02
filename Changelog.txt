@@ -1,0 +1,22 @@
+1st release 981101: French and US English for the ICSLP98 conference
+--------------------------------------------------
+1nd release 990209:  Arabic, French and US English
+--------------------------------------------------
+3rd release 990505: Spanish and Dutch by Fabrice Malfrere
+--------------------------------------------------
+4th release 990625: Put the target into ccarrier sentences + small demo
+--------------------------------------------------
+5th release 000308: 
+
+ * Huge update of French thanks to the work of Richard Beaufort
+(summer 1999 master's thesis)
+
+ * Update of British English by renewing OALD (previously words with
+ less than 4 letters were dropped as they contain many irregular spellings)
+
+ * Add the left to right transcription scheme (more efficient for English)
+
+  Two classes depending on the actual direction of transcription:
+    SRC/Letter2Phone/Letter2PhoneLR.cpp
+    SRC/Letter2Phone/Letter2PhoneRL.cpp
+--------------------------------------------------
