@@ -98,7 +98,7 @@ BOOL CMbrdicoApp::InitInstance()
 		cout << output << endl;
 		// Vincent
         //UpdateData(TRUE);   // Fill the member variables
-        tts.utter(output.c_str(), "arabic", 0); //TODO: remove hard-coded file name
+        tts.utter(output.c_str(), "arabic", 0, __argv[2]); //TODO: remove hard-coded file name
         // ~Vincent
 	}
     myfile.close();

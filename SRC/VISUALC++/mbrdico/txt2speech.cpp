@@ -41,7 +41,7 @@
 // Global variable
 Txt2Speech tts;
 
-void Txt2Speech::utter(const char *target, const char* lang, BOOL display)
+void Txt2Speech::utter(const char *target, const char* lang, BOOL display, LPCTSTR outFile)
 {
   strstream outpho;
   LPhonemePlus lpp;
@@ -83,6 +83,8 @@ void Txt2Speech::utter(const char *target, const char* lang, BOOL display)
 	   outpho << "; Target " << target << endl << "_ 100\n" 
 		  << lpp << endl << "_ 100\n _ 0" << endl << char(0);
 	   int ret=MBR_Play(CString(outpho.str()),MBR_WAIT,NULL,NULL);
+	   if(outFile) //save wave file after playing
+		   MBR_Play(CString(outpho.str()),MBROUT_WAVE,outFile,NULL);
 	   
 	   // If you want to display the phonetic transcription
 	   if (display)

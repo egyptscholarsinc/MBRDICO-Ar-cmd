@@ -35,7 +35,7 @@ public:
 		free(cur_lang);
 	}
 
-	void utter(const char *target, const char* lang, BOOL display);
+	void utter(const char *target, const char* lang, BOOL display, LPCTSTR outFile);
 
 private:
 	Speak* phonet;  // length, exceptions, decision tree for phonetization
