@@ -11,4 +11,5 @@ Prerequisites: MBROLA must be installed first along with the Arabic database, bo
 http://www.tcts.fpms.ac.be/synthesis/mbrola/mbrcopybin.html
 
 Arguments: input.txt file with transilitrated Arabic phonemes to be spoken + optional out.wav file
+
 Output: speech played by MBROLA (+ the optinal played audio saved to a wave file)
