@@ -13,7 +13,8 @@
 #endif
 
 #include "resource.h"		// main symbols
-
+#include <string>
+using namespace std;
 /////////////////////////////////////////////////////////////////////////////
 // CMbrdicoApp:
 // See mbrdico.cpp for the implementation of this class
@@ -30,7 +31,8 @@ public:
 	public:
 	virtual BOOL InitInstance();
 	//}}AFX_VIRTUAL
-
+	private:
+    string translierate(string txt);
 // Implementation
 
 	//{{AFX_MSG(CMbrdicoApp)

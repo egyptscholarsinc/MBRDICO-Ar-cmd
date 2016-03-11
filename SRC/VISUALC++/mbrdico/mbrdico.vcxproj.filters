@@ -112,9 +112,6 @@
     <ClInclude Include="..\..\Include\LToken.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mbrdico.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\mbrolatools\mbrplay.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -155,6 +152,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\ZPhoneme.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mbrdico.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
