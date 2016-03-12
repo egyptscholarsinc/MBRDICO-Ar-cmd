@@ -96,10 +96,10 @@ BOOL CMbrdicoApp::InitInstance()
     while(getline(myfile, output))
 	{
 		//cout << output << endl;
-		string translierated = translierate(output);
+		string transliterated = transliterate(output);
 		// Vincent
         //UpdateData(TRUE);   // Fill the member variables
-        tts.utter(translierated.c_str(), "arabic", 0, __argv[2]); //TODO: remove hard-coded file name
+        tts.utter(transliterated.c_str(), "arabic", 0, __argv[2]); //TODO: remove hard-coded file name
         // ~Vincent
 	}
     myfile.close();
@@ -110,56 +110,76 @@ BOOL CMbrdicoApp::InitInstance()
 	
 }
 
-string CMbrdicoApp::translierate(string txt)
+string CMbrdicoApp::transliterate(string txt)
 {
-	string translierated;
+	string transliterated;
 	for(int i=0; i<txt.length(); i++)
 	{
 		switch (txt.at(i))
 		{
-			case 'È': translierated.append("b"); break;
-			case 'Ê': translierated.append("t"); break;
-			case 'Ë': translierated.append("T"); break;
-			case 'Ì': translierated.append("Z"); break;
-			case 'Í': translierated.append("X"); break;
-			case 'Î': translierated.append("x"); break;
-			case 'Ï': translierated.append("d"); break;
-			case 'Ğ': translierated.append("D"); break;
-			case 'Ñ': translierated.append("r"); break;
-			case 'Ò': translierated.append("z"); break;
-			case 'Ó': translierated.append("s"); break;
-			case 'Ô': translierated.append("S"); break;
-			case 'Õ': translierated.append("s."); break;
-			case 'Ö': translierated.append("d."); break;
-			case 'Ø': translierated.append("t."); break;
-			case 'Ù': translierated.append("z."); break;
-			case 'Ú': translierated.append("H"); break;
-			case 'Û': translierated.append("G"); break;
-			case 'İ': translierated.append("f"); break;
-			case 'Ş': translierated.append("q"); break;
-			case 'ß': translierated.append("k"); break;
-			case 'á': translierated.append("l"); break;
-			case 'ã': translierated.append("m"); break;
-			case 'ä': translierated.append("n"); break;
-			case 'å': translierated.append("h"); break;
-			case 'æ': translierated.append("w"); break;
-			case 'í': translierated.append("j"); break;
-			case 'Á': translierated.append("?"); break;
-			case 'Æ': translierated.append("?"); break;
-			case 'Ä': translierated.append("?"); break;
-			case 'Ã': translierated.append("?"); break;
-			case 'Â': translierated.append("?aa"); break;
-			case 'ó': translierated.append("a"); break;
-			case 'ö': translierated.append("i"); break;
-			case 'õ': translierated.append("u"); break;
-			case 'ñ': translierated.append("un"); break;
-			case 'ò': translierated.append("in"); break;
-			case 'ğ': translierated.append("an"); break;
-			case 'ú': translierated.append(""); break;
-			case 'Ç': translierated.append("a"); break;
-			case 'É': translierated.append("t"); break;
-			default: translierated.append("_"); break;
+			case 'È': transliterated.append("b"); break;
+			case 'Ê': transliterated.append("t"); break;
+			case 'Ë': transliterated.append("T"); break;
+			case 'Ì': transliterated.append("Z"); break;
+			case 'Í': transliterated.append("X"); break;
+			case 'Î': transliterated.append("x"); break;
+			case 'Ï': transliterated.append("d"); break;
+			case 'Ğ': transliterated.append("D"); break;
+			case 'Ñ': transliterated.append("r"); break;
+			case 'Ò': transliterated.append("z"); break;
+			case 'Ó': transliterated.append("s"); break;
+			case 'Ô': transliterated.append("S"); break;
+			case 'Õ': transliterated.append("s."); break;
+			case 'Ö': transliterated.append("d."); break;
+			case 'Ø': transliterated.append("t."); break;
+			case 'Ù': transliterated.append("z."); break;
+			case 'Ú': transliterated.append("H"); break;
+			case 'Û': transliterated.append("G"); break;
+			case 'İ': transliterated.append("f"); break;
+			case 'Ş': transliterated.append("q"); break;
+			case 'ß': transliterated.append("k"); break;
+			case 'á': transliterated.append("l"); break;
+			case 'ã': transliterated.append("m"); break;
+			case 'ä': transliterated.append("n"); break;
+			case 'å': transliterated.append("h"); break;
+			case 'æ': 
+				if(i>0 && txt.at(i-1)=='õ')
+					transliterated.append("uu");	//mad
+				else
+					transliterated.append("w");		//waw
+				break;
+			case 'í': 
+				if(i>0 && txt.at(i-1)=='ö')
+					transliterated.append("ii");	//mad
+				else
+					transliterated.append("j");		//ya2
+				break;
+			case 'Ç': 
+				if(i>0 && txt.at(i-1)=='ó')
+					transliterated.append("aa");	//mad
+				else
+					transliterated.append("a");		//alef
+				break;
+			case 'Á': transliterated.append("?"); break;
+			case 'Æ': transliterated.append("?"); break;
+			case 'Ä': transliterated.append("?"); break;
+			case 'Ã': transliterated.append("?"); break;
+			case 'Å': transliterated.append("?"); break;
+			case 'Â': transliterated.append("?aa"); break;
+			case 'ó': transliterated.append("a"); break;
+			case 'ö': transliterated.append("i"); break;
+			case 'õ': transliterated.append("u"); break;
+			case 'ñ': transliterated.append("un"); break;
+			case 'ò': transliterated.append("in"); break;
+			case 'ğ': transliterated.append("an"); break;
+			case 'ú': transliterated.append(""); break;
+			case 'É': transliterated.append("t"); break;
+			case 'ø':
+				if(i>0)
+					transliterated.append(transliterate(txt.substr(i-1,1)));
+				break;
+			default: transliterated.append("_"); break;
 		}
 	}
-	return translierated;
+	return transliterated;
 }

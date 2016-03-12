@@ -32,7 +32,7 @@ public:
 	virtual BOOL InitInstance();
 	//}}AFX_VIRTUAL
 	private:
-    string translierate(string txt);
+    string transliterate(string txt);
 // Implementation
 
 	//{{AFX_MSG(CMbrdicoApp)

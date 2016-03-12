@@ -138,6 +138,7 @@ SpeakArabic::thonification(LPhonemePlus& lpp) const
 
 			// Vowel followed by a vowel lengthener phoneme (voiced consonants )
 			if ( (rhythm->is_a((*i).get_phone() ,'Z')) &&
+				  (last_phon._Ptr)	&&		//make sure the pointer in the first iteration is not null to prevent a bug from the last condition
 				  (last_voy==last_phon))   // Last one was a vowel
 			  (*last_voy).append_prosody(":");
 
